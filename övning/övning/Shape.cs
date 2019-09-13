@@ -4,7 +4,7 @@ using System.Text;
 
 namespace övning
 {
-    class Shape
+    abstract class Shape
     {
         protected int width;
         protected int height;
@@ -13,5 +13,11 @@ namespace övning
             this.width = width;
             this.height = height;
         }
+        public abstract int Area();
+
+
+        public abstract int Circumference();
+
+
     }
 }

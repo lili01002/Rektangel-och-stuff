@@ -10,13 +10,13 @@ namespace övning
         {
         }
 
-        public int Area()
+        public override int Area()
         {
             int area = (width * height) / 2;
             return area;
         }
 
-        public int Circumference()
+        public override int Circumference()
         {
             double pyt = Math.Pow(width, 2) + Math.Pow(height, 2);
             int hypotenusan = Convert.ToInt32(Math.Sqrt(pyt));

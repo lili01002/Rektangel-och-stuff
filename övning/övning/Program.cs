@@ -8,34 +8,25 @@ namespace övning
         {
             Console.WriteLine("what shape");
             string shape;
+            Shape s;
             shape = Console.ReadLine();
+            Console.WriteLine("what height");
+            int height = int.Parse(Console.ReadLine());
+            Console.WriteLine("what width");
+            int width = int.Parse(Console.ReadLine());
 
-            if(shape == "triangle")
+            if (shape == "triangle")
             {
-                Console.WriteLine("what height");
-                int height = int.Parse(Console.ReadLine());
-                Console.WriteLine("what width");
-                int width = int.Parse(Console.ReadLine());
-                Triangle t = new Triangle(width, height);
-                Console.WriteLine("Area: " + t.Area());
-                Console.WriteLine("Circumference: " + t.Circumference());
+                s = new Triangle(width, height);
             }
 
-            else if(shape == "rectangle")
+            else //if(shape == "rectangle")
             {
-                Console.WriteLine("what height");
-                int height = int.Parse(Console.ReadLine());
-                Console.WriteLine("what width");
-                int width = int.Parse(Console.ReadLine());
-                Rectangle r = new Rectangle(width, height);
-                Console.WriteLine("Area: " + r.Area());
-                Console.WriteLine("Circumference: " + r.Circumference());
+                s = new Rectangle(width, height);
             }
 
-            else
-            {
-
-            }
+            Console.WriteLine("Area: " + s.Area());
+            Console.WriteLine("Circumference: " + s.Circumference());
         }
     }
 }

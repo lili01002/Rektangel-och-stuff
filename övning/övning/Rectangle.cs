@@ -10,13 +10,13 @@ namespace övning
         {
 
         }
-        public int Area()
+        public override int Area()
         {
             int area = width * height;
             return area;
         }
 
-        public int Circumference()
+        public override int Circumference()
         {
             int circumference = (width * 2) + (height * 2);
             return circumference;
